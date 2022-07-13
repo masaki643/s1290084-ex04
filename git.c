@@ -5,7 +5,12 @@ int main(){
   int coin,total=0,n,i;
   int h=0,t=0;
 
-  priintf("Tossing a coin.../n");
+  char name[10];
+  printf("Who are you?\n> ");
+  scanf("%s",name);
+  printf("Hello, %s!\n", name);
+  
+  printf("Tossing a coin.../n");
   for(i=1;i<=3;i++){
     coin= rand()% 2;
     if(coin == 0) {
