@@ -5,7 +5,7 @@ int main(){
   int coin,total=0,n,i;
   int h=0,t=0;
 
-  priintf("Tossing a coin.../n");
+  printf("Tossing a coin.../n");
   for(i=1;i<=3;i++){
     coin= rand()% 2;
     if(coin == 0) {
@@ -18,8 +18,10 @@ int main(){
       t++;
     }
   }
-
+ 
   printf("Heads: %d, Tails: %d\n",h,t);
+  if(h > t) printf("You won!");
+  else printf("You lost!\n");
 
   return 0;
 }
